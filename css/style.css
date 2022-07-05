@@ -363,14 +363,16 @@ main {
 .projetos ul li {
     width: 30%;
     height: 25vh;
-    background-color: #242424;
+    background-image: url("../img/em-breve.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
     padding: 5px;
     margin: 5px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 .projetos ul li a {
@@ -384,6 +386,7 @@ main {
 .projetos ul li img {
     width: 250px;
     align-content: center;
+    background-image: url("../img/em-breve.png");
 }
 
 
@@ -458,8 +461,6 @@ main {
     font-weight: bold;
 }
 
-
-
 .redes-sociais i {
     font-size: 2.5em;
     padding: 10px;
@@ -474,7 +475,6 @@ main {
 footer {
     width: 100%;
     height: 100%;
-
 }
 
 .container-footer {
@@ -498,9 +498,7 @@ footer {
 
 @media (max-width: 730px) {
 
-
     .header-container {
-        margin-top: 14%;
         max-width: 100%;
         height: 100vh;
     }
@@ -522,9 +520,9 @@ footer {
     }
 
     .avatar {
-        width: 300px;
-        height: 300px;
-        background-size: 80%;
+        width: 400px;
+        height: 400px;
+        background-size: 90%;
         margin-bottom: 5em;
         order: 1;
     }
@@ -546,7 +544,7 @@ footer {
     }
 
     .quem-sou p {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .container-tecnologias h3 {
@@ -562,7 +560,6 @@ footer {
         margin-bottom: 10px;
     }
 
-
     .container-tecnologias {
         width: 100%;
         display: flex;
@@ -573,29 +570,27 @@ footer {
         width: 100%;
         display: flex;
         flex-direction: column;
-
+        align-items: center;
     }
 
     .projetos ul {
         display: flex;
         align-content: center;
         align-items: center;
-
     }
 
     .projetos ul li {
         width: 100%;
         height: 25vh;
-
     }
 
     .texto-projetos {
-        width: 100%;
+        width: 90%;
         text-align: center;
     }
 
     .texto-projetos p {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 
     .campos {
