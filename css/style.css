@@ -116,7 +116,7 @@ menu.active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .texto-titulo {
@@ -162,7 +162,7 @@ menu.active {
     height: 300px;
     border-radius: 100%;
     border: 6px groove;
-    background-image: url("./img/black-avatar.webp");
+    background-image: url("../img/black-avatar.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
@@ -203,7 +203,7 @@ main {
     height: 15em;
     border-radius: 5px;
     background-color: #242424;
-    background-image: url("./img/img-perfil.png");
+    background-image: url("../img/img-perfil.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
