@@ -55,6 +55,16 @@ class ControllerPortifolio {
         this.btnMenuEl.addEventListener('click', () => {
             const result = this.menuEl.toggle("active");
         })
+
+        const itemMenu = document.querySelectorAll('.item-menu');
+
+        itemMenu.forEach(item=>{
+            item.addEventListener("click",()=>{
+                let mn = document.querySelector('.list-menu').classList
+                mn.toggle("active");
+            })
+})
+
     }
 
 
