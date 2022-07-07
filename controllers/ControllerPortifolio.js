@@ -6,7 +6,48 @@ class ControllerPortifolio {
         this.menuEl = document.querySelector(menu).classList;
 
         this.onSubmit();
-        this.carregarMenu()
+        this.carregarMenu();
+        this.onButtonCarroussel();
+    }
+
+    onButtonCarroussel() {
+        const control = document.querySelectorAll('.control');
+        let currentItem = 0;
+        const items = document.querySelectorAll('.item-img')
+        const maxItems = items.length;
+
+
+        control.forEach(control => {
+            control.addEventListener('click', () => {
+                const isleft = control.classList.contains("arrow-left");
+
+                if (isleft) {
+                    currentItem -= 1
+                } else {
+                    currentItem += 1
+                }
+
+                if (currentItem >= maxItems) {
+                    currentItem = 0
+                }
+
+                if (currentItem < 0) {
+                    currentItem = maxItems - 1
+                }
+
+                items.forEach(item => {
+                    item.classList.remove('current-item');
+
+                    items[currentItem].scrollIntoView({
+                        inline: "center",
+                        behavior: "smooth",
+                    });
+
+                    items[currentItem].classList.add("current-item");
+                })
+
+            })
+        })
     }
 
     carregarMenu() {

@@ -120,18 +120,19 @@ menu.active {
 }
 
 .texto-titulo {
+
     padding-right: 5em;
 }
 
 .texto-titulo h1 {
     font-size: 3em;
-    font-family: 'League Spartan', sans-serif;
+    font-family: 'arial black', sans-serif;
     color: #f8d510;
 }
 
 .texto-titulo h2 {
-    font-family: 'League Spartan', sans-serif;
-    font-size: 1.3em;
+    font-family: 'arial', sans-serif;
+    font-size: 1.5em;
     padding: 10px;
 }
 
@@ -311,7 +312,6 @@ main {
 .container-projetos {
     display: flex;
     width: 100%;
-
     border-radius: 0.5em;
     background-color: rgba(69, 120, 196, 0.26);
     box-shadow: 0 0 0.5em rgba(3, 3, 3, 0.26);
@@ -342,63 +342,76 @@ main {
     color: white;
 }
 
-.projetos {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
 
+/* #region - Carroussel*/
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
 }
 
-.projetos ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    justify-content: space-between;
-
+.gallery-wrapper {
+    overflow-x: auto;
 }
 
-.projetos ul li {
-    width: 30%;
-    height: 25vh;
-    background-image: url("../img/em-breve.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: white;
-    padding: 5px;
-    margin: 5px;
+.gallery {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-flow: row nowrap;
+    gap: 15px;
+    justify-content: center;
     align-items: center;
 }
 
-.projetos ul li a {
-    padding: 10px 10px;
-    border: 1px solid white;
-    border-radius: 5px;
+.arrow-left,
+.arrow-right {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: 0.1;
+}
+
+.arrow-right {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-right:hover,
+.arrow-left:hover {
+    opacity: 1;
+}
+
+.item-img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+
+.current-item {
+    opacity: 1;
+    border: 5px solid turquoise;
+    box-shadow: 0 0 10px turquoise;
+}
+
+.gallery-wrapper::-webkit-scrollbar {
     display: none;
 }
 
-.projetos ul li img {
-    width: 250px;
-    align-content: center;
-    background-image: url("../img/em-breve.png");
-}
-
-
-.projetos ul li:hover a {
-    display: block;
-}
-
-.projetos ul a {
-    text-decoration: none;
-    color: white;
-
-}
+/* #endregion */
 
 .container-contato h3 {
     font-size: 1.8em;
