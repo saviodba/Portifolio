@@ -250,6 +250,7 @@ main {
     background-color: rgba(69, 120, 196);
     box-shadow: 0 0 0.5em rgba(3, 3, 3, 0.26);
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -265,7 +266,7 @@ main {
     text-transform: uppercase;
     color: #f5f5f5;
     letter-spacing: 5px;
-
+    padding: 15px;
 }
 
 .tecnologias ul {
@@ -313,8 +314,7 @@ main {
 /* #region -Projetos */
 .container-projetos {
     display: flex;
-    justify-content: center;
-    padding: 15px;
+    justify-content: space-between;
     width: 100%;
     height: 50vh;
     background-color: rgba(69, 120, 196);
@@ -325,7 +325,7 @@ main {
 .texto-projetos {
     width: 40%;
     padding: 40px;
-    margin: 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -552,9 +552,15 @@ footer {
 
     .sobre {
         max-width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .sobre .foto-perfil {
+        width: 100%;
+        height: 50vh;
     }
 
     .quem-sou {
@@ -586,30 +592,24 @@ footer {
     }
 
     .container-projetos {
-        width: 100%;
+        max-width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .projetos ul {
-        display: flex;
-        align-content: center;
-        align-items: center;
-    }
-
-    .projetos ul li {
-        width: 100%;
-        height: 25vh;
-    }
-
     .texto-projetos {
-        width: 90%;
+        width: 100%;
         text-align: center;
     }
 
     .texto-projetos p {
-        font-size: 1em;
+        font-size: 1.6em;
+    }
+
+    .texto-projetos h3 {
+        font-size: 2em;
     }
 
     .campos {
@@ -632,6 +632,10 @@ footer {
         display: none;
     }
 
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
 }
 
 
@@ -645,13 +649,17 @@ footer {
     }
 
     .avatar {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
-    .container-tecnologias h4 {
-        font-size: 1.3em;
-        letter-spacing: 4px;
+    .texto-titulo h1 {
+        font-size: 2.4em;
+    }
+
+    .texto-titulo h2 {
+        font-size: 1.6em;
+        padding: 10px;
     }
 
     .container-contato h3 {
@@ -660,18 +668,11 @@ footer {
         text-transform: uppercase;
     }
 
-
-
-    .texto-titulo h1 {
-        font-size: 2.8em;
-
+    .container-tecnologias h4 {
+        font-size: 1.3em;
+        letter-spacing: 4px;
     }
 
-    .texto-titulo h2 {
-
-        font-size: 1.8em;
-        padding: 10px;
-    }
 }
 
 /* #endregion - Responsividade*/
