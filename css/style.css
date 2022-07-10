@@ -359,26 +359,30 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
+
 }
 
 .gallery ul li {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin: 3px;
+    background-color: rgb(15, 101, 151);
+    border: 1px solid rgb(247, 247, 247);
 }
 
 .gallery ul li span {
     position: absolute;
-    border: 1px solid black;
+    border: 2px solid rgb(247, 247, 247);
     cursor: pointer;
+    border-radius: 3px;
     padding: 10px;
 }
 
 .desc a {
     text-decoration: none;
-    color: black;
-
+    color: rgb(247, 247, 247);
+    font-weight: bold;
 
 }
 
@@ -391,7 +395,7 @@ ul {
 }
 
 .gallery ul li:hover .foto {
-    opacity: 0.4;
+    opacity: 0.3;
 }
 
 
