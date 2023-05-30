@@ -214,10 +214,10 @@ main {
 .quem-sou {
 
     color: white;
-    font-size: 1.2em;
+    font-size: 1.1em;
     max-width: 80%;
     padding: 15px;
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -518,12 +518,21 @@ footer {
         order: 2;
         padding-right: 0;
     }
+    
+    .texto-titulo h1 {
+        font-size: 2.4em;
+    }
 
+    .texto-titulo h2 {
+        font-size: 1.6em;
+        padding: 10px;
+    }
     .avatar {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         background-size: 90%;
-        margin-bottom: 5em;
+        margin-bottom: 1em;
+        margin-top:10%;
         order: 1;
     }
 
@@ -551,6 +560,7 @@ footer {
 
     .quem-sou p {
         font-size: 1em;
+   
     }
 
     .container-tecnologias h3 {
